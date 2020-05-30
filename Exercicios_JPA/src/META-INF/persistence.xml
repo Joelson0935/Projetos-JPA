@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="Exercicios_JPA">
+	<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+	
+	<mapping-file>META-INF/consultas.xml</mapping-file>
+	
+	<class>modelo.basico.umpraum.Assento</class>
+	<class>modelo.basico.umpraum.Cliente</class>
+	<class>modelo.basico.umpraum.Vendedor</class>
+	<class>modelo.basico.umpramuitos.Produto</class>
+	<class>modelo.basico.umpramuitos.Mae</class>
+	<class>modelo.basico.umpramuitos.Filhos</class>
+	<class>modelo.basico.umpramuitos.Sobrinhos</class>
+	<class>modelo.basico.bilateral.Compras</class>
+	<class>modelo.basico.bilateral.Remedios</class>
+	<class>modelo.basico.bilateral.Comprador</class>
+	<class>modelo.basico.exercicio.Clientes</class>
+	<class>modelo.basico.exercicio.Roupas</class>
+	<class>modelo.basico.exercicio.Vendas</class>
+	<class>modelo.basico.exercicio.Vendedores</class>
+	<class>modelo.basico.muitospramuitos.Tio</class>
+	<class>modelo.basico.muitospramuitos.Sobrinho</class>
+	<class>modelo.basico.muitospramuitos.Ator</class>
+	<class>modelo.basico.muitospramuitos.Filme</class>
+	<class>modelo.basico.muitospramuitos.Jogador</class>
+	<class>modelo.basico.muitospramuitos.Clube</class>
+		<class>modelo.basico.heranca.Aluno</class>
+		<class>modelo.basico.heranca.AlunoBolsista</class>
+		<class>modelo.basico.heranca.Pai</class>
+		<class>modelo.basico.heranca.Neto</class>
+		<class>modelo.basico.heranca.Professor</class>
+		<class>modelo.basico.heranca.ProfessorUniversitario</class>
+	<properties>
+	<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+	<property name="javax.persistence.jdbc.url" value="jdbc:Mysql://localhost:3306/estudo"/>
+	<property name="javax.persistence.jdbc.user" value="root"/>
+	<property name="javax.persistence.jdbc.password" value="Joe#88236643"/>
+	
+	<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL57Dialect"/>
+	<property name="hibernate.show_sql" value="true"/>
+	<property name="hibernate.format_sql" value="true"/>
+	<property name="hibernate.hbm2ddl.auto" value="update"/>
+	
+	</properties>	
+	</persistence-unit>
+</persistence>
